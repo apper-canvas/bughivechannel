@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "issueId": 1,
+    "userId": 1,
+    "userName": "John Doe",
+    "userEmail": "john.doe@example.com",
+    "content": "I can reproduce this issue consistently. It happens every time I try to submit a form with special characters in the input fields.",
+    "createdAt": "2024-01-15T10:30:00Z",
+    "updatedAt": "2024-01-15T10:30:00Z",
+    "isEdited": false,
+    "parentId": null
+  },
+  {
+    "id": 2,
+    "issueId": 1,
+    "userId": 2,
+    "userName": "Jane Smith",
+    "userEmail": "jane.smith@example.com",
+    "content": "Thanks for the detailed report @john.doe! I've assigned this to our frontend team. Can you provide the exact characters that cause the issue?",
+    "createdAt": "2024-01-15T11:15:00Z",
+    "updatedAt": "2024-01-15T11:15:00Z",
+    "isEdited": false,
+    "parentId": null
+  },
+  {
+    "id": 3,
+    "issueId": 1,
+    "userId": 1,
+    "userName": "John Doe",
+    "userEmail": "john.doe@example.com",
+    "content": "Sure! The problematic characters include: <, >, &, and \" (quotes). Seems like an encoding issue.",
+    "createdAt": "2024-01-15T11:45:00Z",
+    "updatedAt": "2024-01-15T11:45:00Z",
+    "isEdited": false,
+    "parentId": 2
+  },
+  {
+    "id": 4,
+    "issueId": 1,
+    "userId": 3,
+    "userName": "Mike Johnson",
+    "userEmail": "mike.johnson@example.com",
+    "content": "I'll take a look at this. Sounds like we need to improve our input sanitization.",
+    "createdAt": "2024-01-15T14:20:00Z",
+    "updatedAt": "2024-01-15T14:20:00Z",
+    "isEdited": false,
+    "parentId": 2
+  },
+  {
+    "id": 5,
+    "issueId": 2,
+    "userId": 4,
+    "userName": "Sarah Wilson",
+    "userEmail": "sarah.wilson@example.com",
+    "content": "The performance issue is affecting our production environment. Page load times have increased by 300% since the last deployment.",
+    "createdAt": "2024-01-16T09:00:00Z",
+    "updatedAt": "2024-01-16T09:00:00Z",
+    "isEdited": false,
+    "parentId": null
+  },
+  {
+    "id": 6,
+    "issueId": 2,
+    "userId": 5,
+    "userName": "David Brown",
+    "userEmail": "david.brown@example.com",
+    "content": "I'm investigating this now. Initial analysis suggests it might be related to the new caching mechanism we implemented.",
+    "createdAt": "2024-01-16T09:30:00Z",
+    "updatedAt": "2024-01-16T09:35:00Z",
+    "isEdited": true,
+    "parentId": null
+  },
+  {
+    "id": 7,
+    "issueId": 3,
+    "userId": 6,
+    "userName": "Emily Davis",
+    "userEmail": "emily.davis@example.com",
+    "content": "The mobile layout is completely broken on iOS Safari. Buttons are overlapping and the navigation menu is not accessible.",
+    "createdAt": "2024-01-17T13:15:00Z",
+    "updatedAt": "2024-01-17T13:15:00Z",
+    "isEdited": false,
+    "parentId": null
+  },
+  {
+    "id": 8,
+    "issueId": 3,
+    "userId": 7,
+    "userName": "Chris Lee",
+    "userEmail": "chris.lee@example.com",
+    "content": "Can you provide screenshots? Also, which iOS version and Safari version are you using?",
+    "createdAt": "2024-01-17T14:00:00Z",
+    "updatedAt": "2024-01-17T14:00:00Z",
+    "isEdited": false,
+    "parentId": null
+  },
+  {
+    "id": 9,
+    "issueId": 3,
+    "userId": 6,
+    "userName": "Emily Davis",
+    "userEmail": "emily.davis@example.com",
+    "content": "iOS 17.2, Safari latest version. I'll attach screenshots in a moment.",
+    "createdAt": "2024-01-17T14:15:00Z",
+    "updatedAt": "2024-01-17T14:15:00Z",
+    "isEdited": false,
+    "parentId": 8
+  }
+]

@@ -2,16 +2,16 @@ import React from 'react';
 import Modal from '@/components/molecules/Modal';
 import Badge from '@/components/molecules/Badge';
 import Text from '@/components/atoms/Text';
-
+import CommentThread from '@/components/organisms/CommentThread';
 const IssueDetailModal = ({ issue, onClose, getSeverityColor, getStatusColor }) => {
     if (!issue) return null;
 
     return (
         <Modal
             isOpen={!!issue}
-            onClose={onClose}
+onClose={onClose}
             title={issue.title}
-            contentClassName="max-w-2xl" // Override default max-width for this specific modal
+            contentClassName="max-w-4xl max-h-[90vh] overflow-y-auto" // Wider modal for comments
         >
             <Text as="p" className="text-sm text-surface-500 dark:text-surface-400 mt-1 mb-6">
                 Issue #{issue.id} • Created {new Date(issue.createdAt).toLocaleDateString()}
@@ -49,12 +49,17 @@ const IssueDetailModal = ({ issue, onClose, getSeverityColor, getStatusColor }) 
                     </div>
                 </div>
 
-                <div>
+<div>
                     <Text as="h3" className="text-sm font-medium text-surface-900 dark:text-white mb-1">Category</Text>
                     <Text as="p" className="text-surface-600 dark:text-surface-300 text-sm">
                         {issue.category}
                     </Text>
                 </div>
+            </div>
+
+            {/* Comment Thread */}
+            <div className="mt-8 pt-6 border-t border-surface-200 dark:border-surface-700">
+                <CommentThread issueId={issue.id} />
             </div>
         </Modal>
     );
