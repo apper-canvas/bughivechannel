@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import { motion, AnimatePresence } from 'framer-motion';
-import { routes, routeArray } from './config/routes';
+import { routes, routeArray } from '@/config/routes';
+import HomePage from '@/components/pages/HomePage';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import ApperIcon from './components/ApperIcon';
@@ -49,7 +50,9 @@ function App() {
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <currentRoute.component />
+{/* The routes object will reference HomePage via config/routes.js */}
+                  {/* Assuming routes['all-issues'].component is HomePage for this example */}
+                  {activeTab === 'all-issues' ? <HomePage /> : <currentRoute.component />}
                 </motion.div>
               </AnimatePresence>
             </div>
