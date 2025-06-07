@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "issueId": 1,
+    "type": "created",
+    "description": "Issue created",
+    "user": "John Doe",
+    "timestamp": "2024-01-15T09:30:00Z"
+  },
+  {
+    "id": 2,
+    "issueId": 1,
+    "type": "assigned",
+    "description": "Assigned to Sarah Chen",
+    "user": "John Doe",
+    "timestamp": "2024-01-15T09:35:00Z"
+  },
+  {
+    "id": 3,
+    "issueId": 2,
+    "type": "created",
+    "description": "Feature request submitted",
+    "user": "Emily Watson",
+    "timestamp": "2024-01-14T14:20:00Z"
+  },
+  {
+    "id": 4,
+    "issueId": 2,
+    "type": "status_change",
+    "description": "Status changed from New to In Progress",
+    "user": "Mike Rodriguez",
+    "timestamp": "2024-01-16T10:15:00Z"
+  },
+  {
+    "id": 5,
+    "issueId": 3,
+    "type": "created",
+    "description": "Critical bug reported",
+    "user": "Alex Thompson",
+    "timestamp": "2024-01-13T11:45:00Z"
+  },
+  {
+    "id": 6,
+    "issueId": 3,
+    "type": "comment",
+    "description": "Added investigation notes and potential fix",
+    "user": "David Kim",
+    "timestamp": "2024-01-17T16:30:00Z"
+  },
+  {
+    "id": 7,
+    "issueId": 4,
+    "type": "resolved",
+    "description": "Issue resolved and deployed to production",
+    "user": "Lisa Park",
+    "timestamp": "2024-01-18T13:45:00Z"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Login button doesn't respond on mobile",
+    "description": "When testing on iOS Safari, the login button appears to be unresponsive. Users tap it multiple times but nothing happens. The issue seems to be specific to touch events on mobile devices. Desktop browsers work fine with mouse clicks.",
+    "status": "new",
+    "severity": "high",
+    "priority": "high",
+    "category": "Bug",
+    "assignee": "Sarah Chen",
+    "reporter": "John Doe",
+    "createdAt": "2024-01-15T09:30:00Z",
+    "updatedAt": "2024-01-15T09:30:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Add dark mode toggle to settings",
+    "description": "Users have been requesting a dark mode option to reduce eye strain during late-night coding sessions. This should include a toggle in the settings panel and proper theme switching across all components. Should also respect system preferences by default.",
+    "status": "in-progress",
+    "severity": "medium",
+    "priority": "medium",
+    "category": "Feature",
+    "assignee": "Mike Rodriguez",
+    "reporter": "Emily Watson",
+    "createdAt": "2024-01-14T14:20:00Z",
+    "updatedAt": "2024-01-16T10:15:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Database connection timeout on heavy load",
+    "description": "During peak traffic hours (usually 2-4 PM EST), the application experiences database connection timeouts. This affects user experience significantly as pages fail to load. Error logs show connection pool exhaustion. We need to optimize connection handling and possibly implement connection pooling improvements.",
+    "status": "testing",
+    "severity": "critical",
+    "priority": "critical",
+    "category": "Bug",
+    "assignee": "David Kim",
+    "reporter": "Alex Thompson",
+    "createdAt": "2024-01-13T11:45:00Z",
+    "updatedAt": "2024-01-17T16:30:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Improve search functionality with filters",
+    "description": "Current search only works with exact matches. Users need advanced filtering options including date ranges, categories, and severity levels. The search should also support partial matches and fuzzy search capabilities for better usability.",
+    "status": "resolved",
+    "severity": "medium",
+    "priority": "medium",
+    "category": "Enhancement",
+    "assignee": "Lisa Park",
+    "reporter": "Robert Johnson",
+    "createdAt": "2024-01-12T08:15:00Z",
+    "updatedAt": "2024-01-18T13:45:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Update API documentation for v2.0",
+    "description": "The API documentation is outdated and missing several new endpoints introduced in version 2.0. Developers are struggling to integrate because of incomplete documentation. Need to update all endpoint descriptions, add examples, and include proper error response codes.",
+    "status": "new",
+    "severity": "low",
+    "priority": "low",
+    "category": "Documentation",
+    "assignee": "",
+    "reporter": "Jennifer Lee",
+    "createdAt": "2024-01-16T12:00:00Z",
+    "updatedAt": "2024-01-16T12:00:00Z"
+  }
+]
